@@ -1,0 +1,110 @@
+<html>
+  <head></head>
+  <body>
+    <header></header>
+    <main>
+      <section>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Short survey.</p>
+        <form id="survey-form">
+          <div class="survey-elem">
+            <label id="name-label" class="lbl">*Name:</label>
+            <input id="name" type="text" class="data" placeholder="Enter your name" required/>
+          </div>
+          
+          <div class="survey-elem">
+            <label id="email-label" class="lbl">*Email:</label>
+            <input id="email" type="email" class="data" placeholder="Enter your email" required/>
+          </div>
+          
+          <div class="survey-elem">
+            <label id="number-label" class="lbl" required>*Age:</label>
+            <input id="number" type="number" class="data" min="1" max="125" placeholder="Age"/>
+          </div>
+          
+          <div class="survey-elem">
+            <label id="dropdown-label" class="lbl">What is your major?</label>
+            <select id="dropdown" class="data">
+              <option selected disabled value="">Select an option</option>
+              <option value="Computer Science">Computer Science</option>
+              <option value="Computer Engineering">Computer Engineering</option>
+              <option value="Software Engineering">Software Engineering</option>
+              <option value="Prefer not to say">Prefer not to say</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          
+          <div class="survey-elem">
+            <label id="radio-label" class="lbl" required>*How likely is it that you will become the next Mark Zuckerberg?</label>
+            <div id="radio" class="data">
+              <label>
+                <input type="radio" name="reccommend" value="definitely"/>
+                <span>Definitely</span>
+              </label>
+              <label>
+                <input type="radio" name="reccommend" value="extremely"/>
+                <span>Extremely likely</span>
+              </label>
+              <label>
+                <input type="radio" name="reccommend" value="never"/>
+                <span>When pigs fly</span>
+              </label>
+            </div>
+          </div>
+          
+          <div class="survey-elem">
+            <label id="dropdown2-label" class="lbl">What is your main area of interest?</label>
+            <select id="dropdown2" class="data">
+              <option selected disabled value="">Select an option</option>
+              <option value="robotics">Robotics</option>
+              <option value="web-dev">Web Development</option>
+              <option value="security">Security</option>
+              <option value="ai">Artificial Intelligence</option>
+            </select>
+          </div>
+          
+          <div class="survey-elem">
+            <label id="checkbox-label" class="lbl">How do you save your code? (check all that apply)</label>
+            <div id="checkbox" class="data">
+              <label>
+                <input type="checkbox" name="save" value="github"/>
+                <span>Uploading it to Github</span>
+              </label>
+              <label>
+                <input type="checkbox" name="save" value="drive"/>
+                <span>Uploading it to Drive</span>
+              </label>
+              <label>
+                <input type="checkbox" name="save" value="ssh"/>
+                <span>Ssh'ing into your server</span>
+              </label>
+              <label>
+                <input type="checkbox" name="save" value="picture"/>
+                <span>Taking a picture</span>
+              </label>
+              <label>
+                <input type="checkbox" name="save" value="email"/>
+                <span>Emailing it to yourself</span>
+              </label>
+              <label>
+                <input type="checkbox" name="save" value="voice-record"/>
+                <span>Voice-recording it</span>
+              </label>
+            </div>
+          </div>
+          
+          <div class="survey-elem">
+            <label id="textarea-label" class="lbl">Any comments or suggestions?</label>
+            <textarea id="textarea" rows="3" cols="5" class="data" placeholder="Enter your comment here..."></textarea>
+          </div>
+          
+          <div class="button">
+            <button id="submit" type="submit">Submit</button>
+          </div>
+          
+        </form>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
